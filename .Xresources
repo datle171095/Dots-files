@@ -1,0 +1,62 @@
+! URXVT GENERAL CONFIG
+!------------------------------------------------
+URxvt.geometry: 80x22
+Xcursor.theme: Breeze-Snow
+Xcursor.size: 18
+
+! URXVT FONTS
+!------------------------------------------------
+URxvt.font: xft:Terminess\ Powerline:pixelsize=14:antialias=true
+URxvt.boldFont: xft:Terminess\ Powerline:pixelsize=14:bold:pixelsize=14:antialias=true
+URxvt*letterSpace: 1
+URxvt*allow_bold: true
+
+! URXVT FONT SETTINGS
+!------------------------------------------------
+Xft.autohint: false
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+URxvt.matcher.button: 1
+URxvt.insecure: false
+URxvt.url-launcher: /usr/bin/firefox
+
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+URxvt*saveLines: 300000
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+URxvt.borderless: false
+URxvt.internalBorder: 3
+URxvt.externalBorder: 3
+URxvt.scrollBar: false
+
+! URXVT COLORS
+!------------------------------------------------
+! Color definitions
+#include "/home/datle/.config/colors/gruvbox"
+
+! rofi
+rofi.modi: run
+rofi.font: Hack 15
+rofi.width: 100
+rofi.lines: 5
+rofi.columns: 1
+rofi.opacity: 80
+!                    bg       fg      altbg    hlbg     hlfg
+rofi.color-normal: #282828, #ebdbb2, #282828, #ebdbb2, #282828
+rofi.color-urgent: #282828, #ebdbb2, #282828, #ebdbb2, #282828
+rofi.color-active: #282828, #ebdbb2, #282828, #ebdbb2, #282828
+rofi.color-window: #282828, #282828
+rofi.bw: 0
+rofi.location: 2
+rofi.padding: 100
+rofi.fuzzy: false
+
+

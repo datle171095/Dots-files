@@ -1,0 +1,9 @@
+nm-applet &
+urxvtd -q &
+[ ! -s ~/.config/mpd/pid ] && mpd
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE=xim
+export GTK_IM_MODULE=fcitx
+fcitx &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+compton --config /home/datle/.config/compton.conf -b &
